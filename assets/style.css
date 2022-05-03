@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-html {
+:root {
   font-size: 16px;
   line-height: 1.6;
 }
@@ -99,7 +99,7 @@ header nav a.active {
   }
 }
 
-@media all and (max-width: 880px) {
+@media (max-width: 880px) {
   header > a {
     flex-basis: 50%;
   }
@@ -111,51 +111,47 @@ header nav a.active {
   }
 }
 
-@media all and (max-width: 500px) {
+@media (max-width: 500px) {
   header {
     flex-direction: column;
   }
   header > a {
     border-right: 1px none #333;
   }
-
 }
 
-#aktualni {
+section {
   display: flex;
   flex-direction: row;
-  margin: 3rem;
 }
 
-#aktualni > div:first-child {
-  flex-basis:70%;
-  flex-grow: 1;
-  margin-right: 3rem;
-}
-
-#aktualni > div:last-child {
+section > div:first-child {
+  padding: 3rem;
   flex-basis: 30%;
   flex-grow: 1;
 }
 
-@media all and (max-width: 900px) {
-  #aktualni {
-    display: flex;
-    flex-direction: column-reverse;
-    margin: 3rem;
+section > div:last-child {
+  padding: 3rem;
+  flex-basis: 70%;
+  flex-grow: 1;
+}
+
+@media (max-width: 880px) {
+  section {
+    flex-direction: column;
   }
-  #aktualni img {
-    width: 50%;
-    padding-right: 3rem;
-    padding-bottom: 3rem;
+  section > div:first-child {
+    max-width: 50%;
   }
 }
 
-@media all and (max-width: 540px) {
-  #aktualni img {
-    width: 100%;
-    padding-right: 0;
-    padding-bottom: 3rem;
+@media (max-width: 550px) {
+  section {
+    flex-direction: column;
+  }
+  section > div:first-child {
+    max-width: 100%;
   }
 }
 
@@ -199,7 +195,6 @@ h2 {
 footer {
   color: #fff;
   background-color: #333;
-  padding: 3rem;
   display: flex;
   flex-direction: row;
 }
@@ -207,57 +202,19 @@ footer {
 footer > div:first-child {
   flex-basis: 30%;
   flex-grow: 1;
+  padding: 3rem;
 }
 
 footer > div:last-child {
   flex-basis: 70%;
   flex-grow: 1;
+  padding: 3rem;
 }
 
 @media all and (max-width:980px) {
   footer {
     flex-direction: column;
   }
-}
-
-#article {
-  display: flex;
-  flex-direction: row;
-  margin: 3rem;
-}
-
-#article div:first-child {
-  flex-basis: 30%;
-}
-
-#article div:last-child {
-  flex-basis: 70%;
-  margin-left: 3rem;
-}
-
-@media all and (max-width: 880px) {
-
-  #article {
-    display: flex;
-    flex-direction: column;
-    margin: 3rem;
-  }
-
-  #article div:first-child {
-    flex-basis: 100%;
-  }
-
-  #article div:last-child {
-    flex-basis: 100%;
-    margin-left: 0;
-  }
-
-}
-
-article + article {
-  margin-top: 3rem;
-  padding-top: 3rem;
-  border-top: 1px solid #555;
 }
 
 .summary {
