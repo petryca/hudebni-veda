@@ -15,18 +15,19 @@ body {
   font-family: Lora, serif;
   margin: 0 auto;
   max-width: 1680px;
+  --theme-color: #57A2B5;
 }
 
 @media (min-width: 1680px) {
   body {
-    border-left: 1px solid #988120;
-    border-right: 1px solid #988120;
+    border-left: 1px solid var(--theme-color);
+    border-right: 1px solid var(--theme-color);
   }
 }
 
 a {
   /* color: #2d71e5; */
-  color: #988120;
+  color: var(--theme-color);
   text-decoration: none;
 }
 
@@ -45,7 +46,7 @@ header {
   margin: 0;
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid #988120;
+  border-bottom: 1px solid var(--theme-color);
 }
 
 header > a {
@@ -53,7 +54,7 @@ header > a {
   display: block;
   flex-basis: 30%;
   flex-grow: 1;
-  border-right: 1px solid #988120;
+  border-right: 1px solid var(--theme-color);
 }
 
 header > nav {
