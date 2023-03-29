@@ -15,7 +15,8 @@ body {
   font-family: Lora, serif;
   margin: 0 auto;
   max-width: 1680px;
-  --theme-color: #57A2B5;
+  --theme-color: rgb(92, 117, 76);
+  --hover-color: rgb(52, 99, 22);
 }
 
 @media (min-width: 1680px) {
@@ -26,13 +27,12 @@ body {
 }
 
 a {
-  /* color: #2d71e5; */
   color: var(--theme-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: #0842a7;
+  color: var(--hover-color);
   text-decoration: none;
 }
 
@@ -88,7 +88,7 @@ header > nav a {
   color: #666;
   display: block;
   margin: 0.3rem;
-  border-bottom: 3px solid rgba(125, 125, 125, 0);
+  border-bottom: 3px solid var(--theme-color);
   white-space: nowrap;
 }
 
@@ -97,7 +97,7 @@ header > nav a:hover {
   color: #333;
   display: block;
   margin: 0.3rem;
-  border-bottom: 3px solid rgba(125, 125, 125, 0.5);
+  border-bottom: 3px solid var(--hover-color);
 }
 
 header nav a.active {
