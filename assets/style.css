@@ -15,8 +15,8 @@ body {
   font-family: Lora, serif;
   margin: 0 auto;
   max-width: 1680px;
-  --theme-color: rgb(177, 61, 29);
-  --hover-color: rgb(224, 78, 37);
+  --theme-color: rgb(19, 121, 133);
+  --hover-color: rgb(22, 75, 82);
 }
 
 @media (min-width: 1680px) {
