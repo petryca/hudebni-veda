@@ -15,8 +15,8 @@ body {
   font-family: Lora, serif;
   margin: 0 auto;
   max-width: 1680px;
-  --theme-color: #6C7F75;
-  --hover-color: #313633;
+  --theme-color: #7C5045;
+  --hover-color: #55251B;
 }
 
 @media (min-width: 1680px) {
@@ -85,7 +85,7 @@ header ul {
 
 header > nav a {
   text-decoration: none;
-  color: #666;
+  color: var(--theme-color);
   display: block;
   margin: 0.3rem;
   border-bottom: 3px solid var(--theme-color);
@@ -94,14 +94,14 @@ header > nav a {
 
 header > nav a:hover {
   text-decoration: none;
-  color: #333;
+  color: var(--hover-color);
   display: block;
   margin: 0.3rem;
   border-bottom: 3px solid var(--hover-color);
 }
 
 header nav a.active {
-  border-bottom: 3px solid #666;
+  border-bottom: 3px solid var(--theme-color);
 }
 
 @media all and (max-width: 1200px) {
