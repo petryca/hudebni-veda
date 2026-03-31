@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(xxd)",
+      "Bash(perl -pe 's|href=\"\"\"\"\\(/\\\\d{4}/[^\"\"\"\"]+/\\)\"\"\"\"><img src=\"\"\"\"/media/hv-[^\"\"\"\"]+\\\\.jpg\"\"\"\"|href=\"\"\"\"$1\"\"\"\"><img src=\"\"\"\"${1}cover.jpg\"\"\"\"|g')",
+      "Bash(for f:*)",
+      "Bash(do)",
+      "Bash(perl -pe 's|<a href=\"\"/\"\" class=\"\"active\"\">Aktuální číslo</a>|<a href=\"\"/\"\">Aktuální číslo</a>|g;:*)",
+      "Bash(\"$f.tmp\")",
+      "Bash(mv \"$f.tmp\" \"$f\")"
+    ]
+  }
+}

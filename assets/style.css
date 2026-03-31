@@ -17,6 +17,7 @@ body {
   max-width: 1680px;
   --theme-color: #395C78;
   --hover-color: #0D2C40;
+  background-color: white;
 }
 
 @media (min-width: 1680px) {
